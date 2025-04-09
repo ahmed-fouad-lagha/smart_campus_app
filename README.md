@@ -1,16 +1,45 @@
-# smart_campus_app
+# SmartCampusInsights 📊📱
 
-A new Flutter project.
+A cross-platform mobile app developed for **Starthon’25**, organized by AI House, University of El Oued. The app unifies university data from multiple web sources and provides AI-powered insights and personalized features for students, faculty, and administrators.
 
-## Getting Started
+## 🚀 Project Overview
 
-This project is a starting point for a Flutter application.
+Universities have data scattered across multiple portals — course schedules, events, announcements, research updates, etc. This app aggregates and visualizes all that in one mobile interface with:
 
-A few resources to get you started if this is your first Flutter project:
+- 📅 Unified dashboards
+- 🔍 Smart search and filtering
+- 🤖 AI-based recommendations and trend prediction
+- 📢 Personalized notifications
+- 📈 Interactive charts and visualizations
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 👥 Team
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Team Name: *NeuroNauts*
+- Roles:
+    - Core App Developer: LAGHA Ahmed Fouad, SID Aymen
+    - Data Aggregation & Setup: BENZAIM Abdelmouaine, SEGHIRI Ayad
+    - Designer: LALAOUNA Mohamed Tarek
+
+## 📱 Tech Stack
+
+- Flutter (Cross-platform mobile development)
+- Dart (Programming language)
+- Firebase (Backend and database)
+- Python (for data aggregation scripts / scraping)
+- scikit-learn or TensorFlow Lite (AI models)
+- Web scraping tools: BeautifulSoup, Requests, etc.
+
+## 📂 Folder Structure
+
+```bash
+SmartCampusInsights/
+├── lib/                 # Flutter app code
+│   ├── main.dart
+│   ├── screens/
+│   ├── widgets/
+│   └── services/
+├── assets/              # Fonts, images, icons
+├── data/                # Sample or raw datasets
+├── backend/             # Python scripts (scraping, ML)
+├── README.md
+└── LICENSE
