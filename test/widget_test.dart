@@ -1,25 +1,30 @@
+// This is a basic Flutter widget test.
+//
+// To perform an interaction with a widget in your test, use the WidgetTester
+// utility in the flutter_test package. For example, you can send tap and scroll
+// gestures. You can also use WidgetTester to find child widgets in the widget
+// tree, read text, and verify that the values of widget properties are correct.
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
-import 'package:smart_campus_app/main.dart';
-import 'package:smart_campus_app/services/sync_service.dart';
 
-class MockSyncService extends Mock implements SyncService {}
+import 'package:projects/app.dart';
 
 void main() {
-  late MockSyncService mockSyncService;
-
-  setUp(() async {
-    mockSyncService = MockSyncService();
-    // Setup any mock behaviors if needed
-  });
-
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(SmartCampusApp(syncService: mockSyncService));
+    await tester.pumpWidget(const SmartCampusApp());
 
-    // Verify that our app starts with the dashboard
-    expect(find.text('Smart Campus Insights'), findsOneWidget);
-    expect(find.text('Quick Stats'), findsOneWidget);
+    // Verify that our counter starts at 0.
+    expect(find.text('0'), findsOneWidget);
+    expect(find.text('1'), findsNothing);
+
+    // Tap the '+' icon and trigger a frame.
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('0'), findsNothing);
+    expect(find.text('1'), findsOneWidget);
   });
 }

@@ -1,45 +1,144 @@
-# SmartCampusInsights 📊📱
+# Smart Campus Insights
 
-A cross-platform mobile app developed for **Starthon’25**, organized by AI House, University of El Oued. The app unifies university data from multiple web sources and provides AI-powered insights and personalized features for students, faculty, and administrators.
+A unified university data application for Smart Campus Insights.
 
-## 🚀 Project Overview
+## Features
 
-Universities have data scattered across multiple portals — course schedules, events, announcements, research updates, etc. This app aggregates and visualizes all that in one mobile interface with:
+### Authentication
+- User registration and login
+- Secure password storage
+- Session management
 
-- 📅 Unified dashboards
-- 🔍 Smart search and filtering
-- 🤖 AI-based recommendations and trend prediction
-- 📢 Personalized notifications
-- 📈 Interactive charts and visualizations
+### Dashboard
+- Overview of academic performance
+- Course attendance visualization
+- Enrollment trends analysis
+- Event popularity metrics
 
-## 👥 Team
+### Courses
+- List of enrolled courses
+- Course details and schedule
+- Attendance analytics
+- Performance tracking
 
-- Team Name: *NeuroNauts*
-- Roles:
-    - Core App Developer: LAGHA Ahmed Fouad, SID Aymen
-    - Data Aggregation & Setup: BENZAIM Abdelmouaine, SEGHIRI Ayad
-    - Designer: LALAOUNA Mohamed Tarek
+### Events
+- Campus events calendar
+- Event details and location
+- Popularity metrics
+- RSVP functionality
 
-## 📱 Tech Stack
+### Data Visualization
+- Interactive charts and graphs
+- Attendance tracking
+- Enrollment predictions
+- Event popularity analysis
 
-- Flutter (Cross-platform mobile development)
-- Dart (Programming language)
-- Firebase (Backend and database)
-- Python (for data aggregation scripts / scraping)
-- scikit-learn or TensorFlow Lite (AI models)
-- Web scraping tools: BeautifulSoup, Requests, etc.
+### AI/ML Integration
+- Personalized course recommendations
+- GPA prediction and academic performance forecasting
+- Career path analysis and suggestions
+- Feedback sentiment analysis
+- Study habit improvement suggestions
 
-## 📂 Folder Structure
+## Getting Started
 
-```bash
-SmartCampusInsights/
-├── lib/                 # Flutter app code
-│   ├── main.dart
-│   ├── screens/
-│   ├── widgets/
-│   └── services/
-├── assets/              # Fonts, images, icons
-├── data/                # Sample or raw datasets
-├── backend/             # Python scripts (scraping, ML)
-├── README.md
-└── LICENSE
+### Prerequisites
+- Flutter SDK (2.19.0 or higher)
+- Dart SDK
+- Android Studio / VS Code
+- Android SDK / Xcode (for iOS development)
+
+### Installation
+
+1. Clone the repository
+   \`\`\`bash
+   git clone https://github.com/yourusername/smart-campus-insights.git
+   \`\`\`
+
+2. Navigate to the project directory
+   \`\`\`bash
+   cd smart-campus-insights
+   \`\`\`
+
+3. Install dependencies
+   \`\`\`bash
+   flutter pub get
+   \`\`\`
+
+4. Run the app
+   \`\`\`bash
+   flutter run
+   \`\`\`
+
+## Project Structure
+
+- `lib/main.dart` - Entry point
+- `lib/app.dart` - App configuration
+- `lib/config/` - Routes and themes
+- `lib/models/` - Data models
+- `lib/screens/` - UI screens
+- `lib/services/` - API, auth, storage, and ML services
+- `lib/utils/` - Utility functions
+- `lib/widgets/` - Reusable widgets
+
+## Dependencies
+
+- `go_router` - Navigation
+- `provider` - State management
+- `shared_preferences` - Local storage
+- `http` - API requests
+- `fl_chart` - Data visualization
+- `percent_indicator` - Progress indicators
+- `shimmer` - Loading effects
+- `intl` - Date formatting
+- `crypto` - Password hashing
+
+## AI/ML Features
+
+### Course Recommendations
+The app uses a recommendation system to suggest courses based on:
+- Previously taken courses
+- Academic interests
+- Career goals
+- Course popularity and ratings
+
+### GPA Prediction
+Predicts future academic performance using:
+- Current GPA
+- Course difficulty
+- Study habits
+- Historical performance patterns
+
+### Career Path Analysis
+Analyzes potential career paths based on:
+- Academic performance
+- Course selection
+- Skills assessment
+- Industry trends
+
+### Feedback Sentiment Analysis
+Analyzes the sentiment of course feedback to:
+- Identify positive and negative aspects
+- Extract key themes and topics
+- Provide actionable insights
+
+## Future Enhancements
+
+1. **Web Scraping**
+   - University website data extraction
+   - Automated data updates
+   - Scheduled synchronization
+
+2. **Offline Mode**
+   - Local database
+   - Background sync
+   - Offline-first architecture
+
+3. **User Experience**
+   - Animations and transitions
+   - Dark mode
+   - Accessibility features
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
