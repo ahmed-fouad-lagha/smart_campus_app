@@ -1,0 +1,22 @@
+[project]
+name = "starthon"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.49.0",
+    "faker>=37.1.0",
+    "fitz>=0.0.1.dev2",
+    "flask>=3.1.0",
+    "flask-sqlalchemy>=3.1.1",
+    "frontend>=0.0.3",
+    "googlesearch-python>=1.3.0",
+    "instructor[google-generativeai]>=1.7.9",
+    "ollama>=0.4.7",
+    "openai>=1.72.0",
+    "pydantic>=2.11.3",
+    "schedule>=1.2.2",
+    "sqlalchemy>=2.0.40",
+    "transformers>=4.51.1",
+]
